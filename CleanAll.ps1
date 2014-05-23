@@ -13,5 +13,6 @@
 # *************************************************************************
 Get-ChildItem -Path .\ -Recurse -Filter *.csproj | `
 Foreach-Object {
-	msbuild $_.FullName /t:Clean
+	MSBuild $_.FullName /t:Clean
+	Start-Sleep -Milliseconds 10
 }
