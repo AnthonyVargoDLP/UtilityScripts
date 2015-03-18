@@ -3,6 +3,7 @@
 # > SplitTunnel -ConnectionName [VPN-Connection-Name] -Subnet [VPN-Subnet]
 #
 # Note: You'll need to enclose multi-word parameters in quotes.
+# Another note: You may need to run Set-ExecutionPolicy Unrestricted before running this.
 
 [CmdletBinding()]
 Param(
